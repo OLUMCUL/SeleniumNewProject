@@ -39,26 +39,8 @@ public class C04_ManageMethods_ImplicitlyWait {
         System.out.println(driver.getTitle());
 
         driver.close();
-/*        Yeni bir Class olusturalim.C07_ManageWindowSet
-        Amazon soyfasina gidelim. https://www.amazon.com/
-        Sayfanin konumunu ve boyutlarini yazdirin
-        Sayfanin konumunu ve boyutunu istediginiz sekilde ayarlayin
-        Sayfanin sizin istediginiz konum ve boyuta geldigini test edin
-        8. Sayfayi kapatin*/
 
 
-/*
-        Yeni bir class olusturalim (Homework)
-        ChromeDriver kullanarak, facebook sayfasina gidin ve sayfa basliginin (title) “facebook”
-        oldugunu dogrulayin (verify), degilse dogru basligi yazdirin.
-                Sayfa URL’inin “facebook” kelimesi icerdigini dogrulayin, icermiyorsa “actual” URL’i
-        yazdirin.
-                https://www.walmart.com/ sayfasina gidin.
-        Sayfa basliginin “Walmart.com” icerdigini dogrulayin.
-        Tekrar “facebook” sayfasina donun
-        Sayfayi yenileyin
-        Sayfayi tam sayfa (maximize) yapin  9.Browser’i kapatin
-*/
 
     }
 }

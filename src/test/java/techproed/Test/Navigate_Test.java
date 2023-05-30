@@ -21,6 +21,14 @@ public class Navigate_Test {
         Sayfayi kapatalim / Tum sayfalari kapatalim
 */
 
+        driver.get("https://www.youtube.com/");
+        driver.get("https://www.amazon.com.tr/");
+        driver.navigate().back();
+        driver.navigate().forward();
+        driver.navigate().refresh();
+
+        driver.quit();
+
 
 
 
