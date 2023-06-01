@@ -26,9 +26,6 @@ public class Amazon_Select_Test {
 
         //Utils.findElById("twotabsearchtextbox","iphone");
 
-
-
-
         for (int i = 0; i < 5; i++) {
             java.util.List<WebElement> searchResults = driver.findElements(By.xpath("//div[@data-component-type='s-search-result']//h2/a"));
             WebElement searchResult = searchResults.get(i);
@@ -44,29 +41,8 @@ public class Amazon_Select_Test {
             driver.findElements(By.xpath("//div[@data-component-type='s-search-result']//h2/a"));
         }
 
-
-
-        //çıkan sonuç yazısını konsola yazdırınız
-        List<WebElement> h2baslik = driver.findElements(By.xpath("//div[@data-component-type='s-search-result']//h2/a"));
-        System.out.println(h2baslik.size());
-
-//        for (WebElement w:h2baslik) {
-//            System.out.println(w.getText());
-//        }
-
-//        for (int i = 0; i < 5; i++) {
-//            WebElement searchResults = h2baslik.get(i);
-//            searchResults.click();
-//            System.out.println(driver.getTitle());
-//            driver.navigate().back();
-//
-//        }
-
-
-
-
-
-        //Utils.sleeping(10000);
-        //driver.close();
+        Utils.sleeping(10000);
+        driver.close();
     }
 }
+
