@@ -66,18 +66,21 @@ public class Test_Case_1 {
         Actions actions = new Actions(driver);
 
         // Perform the click action using x and y coordinates
-        actions.moveByOffset(400, 400).click().build().perform();
+        Utils.sleeping(3000);
+        actions.moveByOffset(400, 555).click().build().perform();
         Utils.sleeping(3000);
 
 //        16. Verify that 'Logged in as username' is visible---------------------------------------------------------------
-        System.out.println("driver.findElement(By.xpath(\"//*[@class=\\\"fa fa-user\\\"]\\n\")).isDisplayed() = " + driver.findElement(By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[10]/a")).isDisplayed());
+        System.out.println("Logged in as username' is visible = " + driver.findElement(By.xpath("//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[10]/a")).isDisplayed());
 
 //        17. Click 'Delete Account' button
         driver.findElement(By.xpath("//*[@href='/delete_account']")).click();
 //        18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
         System.out.println("driver.findElement(By.xpath(\"//*[@data-qa=\\\"account-deleted\\\"]\\n\")).isDisplayed() = " + driver.findElement(By.xpath("//*[@data-qa=\"account-deleted\"]\n")).isDisplayed());
         driver.findElement(By.xpath("//*[@data-qa=\"continue-button\"]\n")).click();
-        //driver.findElement(By.xpath(""));
+
+
+
 
 
     }
